@@ -1,0 +1,14 @@
+// Змінні, міксини, функції
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+
+// CSS-файли бібліотек
+@import "vendor/libs";
+
+// Основні
+@import "base/fonts";
+@import "base/general";
+
+// БЭМ-блоки
+@import "../components/modules";
