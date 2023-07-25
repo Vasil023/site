@@ -8,3 +8,22 @@
     font-style: #{$style};
   }
 }
+
+@mixin phone {
+  @media (max-width: 599px) { @content; }
+}
+@mixin tablet-smaall {
+  @media (max-width: 600px) { @content; }
+}
+@mixin tablet-larg {
+  @media (max-width: 900px) { @content; }
+}
+@mixin tablet-up {
+  @media (max-width: 1030px) { @content; }
+}
+@mixin desktop-up {
+  @media (max-width: 1440px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}

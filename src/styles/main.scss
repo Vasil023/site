@@ -5,10 +5,14 @@
 
 // CSS-файли бібліотек
 @import "vendor/libs";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
 
 // Основні
 @import "base/fonts";
 @import "base/general";
+@import "base/button";
+@import "page/home-page";
 
 // БЭМ-блоки
 @import "../components/modules";

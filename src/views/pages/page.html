@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
+  @@include("./_head.html", { "title": "Test Page" })
 
-@@include("./_head.html", {
-"title": "Test Page"
-})
-
-<body>
+  <body>
     @@include("../../components/modules/header/header.html")
-    <main>
+    <main class="page">
+      <!-- First screen -->
+      <section class="first-screen">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="first-screen-content col-xl-11">
+            <h1 class="heading-title">Déléguez vos pré-relances et vos relances de factures impayées</h1>
+            <p>
+              Faites-vous payer en phase amiable en 60 jours jusqu’à 90% de vos factures impayées grâce à
+              GAYSSOT RECOUVREMENT
+            </p>
+          </div>
+
+          <a href="#" class="btn-yellow">DEMANDEZ UN AUDIT</a>
+        </div>
+      </section>
+
+      <!-- NOS SERVICES RECOUVREMENT -->
+      @@include("../../components/modules/nos-services/nos-services.html")
+
+      <!-- Les AVANTAGES de GAYSSOT Recouvrement -->
+      @@include("../../components/modules/avantages/avantages.html")
     </main>
     @@include("../../components/modules/footer/footer.html")
     <script src="../js/vendor.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

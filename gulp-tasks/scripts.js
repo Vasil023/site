@@ -14,13 +14,13 @@ const webpackConfig = require("../webpack.config.js"),
     argv = yargs.argv,
     production = !!argv.production;
 
-webpackConfig.mode = production ? "development" : "production";
-webpackConfig.devtool = production ? false : "source-map";
+webpackConfig.mode = production ? "production" : "development";
+webpackConfig.devtool = production ? "source-map" : false;
 
 gulp.task("scripts", () => {
     return gulp.src(paths.scripts.src)
         .pipe(webpackStream(webpackConfig), webpack)
-        .pipe(gulpif(!production, rename({
+        .pipe(gulpif(production, rename({
             suffix: ".min"
         })))
         .pipe(gulp.dest(paths.scripts.dist))

@@ -18,7 +18,7 @@ gulp.task("views", () => {
             prefix: "@@",
             basepath: "@file"
         }))
-        .pipe(gulpif(!production, versionNumber({
+        .pipe(versionNumber({
             "value": "%DT%",
             "append": {
                 "key": "_v",
@@ -27,11 +27,8 @@ gulp.task("views", () => {
                     "css",
                     "js",
                 ]
-            },
-            "output": {
-                "file": "gulp-tasks/version.json"
             }
-        })))
+        }))
         .pipe(replace(/@img\//g, "../img/"))
         .pipe(gulpif(production, replace(".css", ".min.css")))
         .pipe(gulpif(production, replace(".js", ".min.js")))
