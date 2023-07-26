@@ -13,26 +13,87 @@ ul {
   list-style-type: none;
 }
 
-
 @media (min-width: 1200px) {
-  .h1,h1 {
-      font-size: rem(78)
+  .h1,
+  h1 {
+    font-size: rem(78);
   }
 
-  .h2,h2 {
-      font-size: 2rem
+  .h2,
+  h2 {
+    font-size: rem(64);
+    font-weight: 700;
+
+    @include phone {
+      font-size: rem(44);
+    }
   }
 
-  .h3,h3 {
-      font-size: 1.75rem
+  .h3,
+  h3 {
+    font-size: 1.75rem;
   }
 
-  .h4,h4,legend {
-      font-size: 1.5rem
+  .h4,
+  h4,
+  legend {
+    font-size: 1.5rem;
   }
 }
 
-
 body {
   font-family: Public Sans;
+}
+
+.heading {
+  font-size: rem(44);
+  font-weight: 700;
+  text-align: center;
+
+  @include phone {
+    font-size: rem(25);
+  }
+}
+
+.subtitle {
+  font-size: rem(48);
+  font-weight: 400;
+  line-height: 60px;
+  margin-top: 40px;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+._border-bottom {
+  border-bottom: 3px solid $yellow;
+
+}
+
+.vous {
+  padding: 48px 292px !important;
+
+  @include phone {
+    padding: 32px 16px !important;
+  }
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+
+  a {
+    font-size: rem(48);
+    color: #13023E;
+    font-weight: 600;
+    text-decoration: none;
+
+    @include phone {
+      font-size: rem(32);
+    }
+  }
 }

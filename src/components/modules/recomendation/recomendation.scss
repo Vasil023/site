@@ -1,0 +1,28 @@
+.recomendation {
+  background: #eae6f4;
+  padding: 57px 0;
+}
+
+.recomendation-items {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.recomendation-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 255px;
+
+  img {
+    width: 44px;
+    height: 44px;
+    margin-right: 12px;
+  }
+
+  span {
+    font-size: rem(22);
+    font-weight: 500;
+  }
+}
