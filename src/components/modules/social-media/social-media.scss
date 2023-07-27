@@ -1,0 +1,75 @@
+.social-media-wrapper {
+  background-image: url(../../../img/social-baner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 480px;
+  padding: 67px 120px;
+  text-align: center;
+  position: relative;
+
+  @include phone {
+    height: 100%;
+  }
+
+  h1 {
+    color: $white;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 71px;
+
+    @include phone {
+      gap: 32px;
+    }
+
+    li {
+      a {
+        text-decoration: none;
+        text-align: center;
+
+        img {
+          width: 110px;
+          height: 110px;
+
+          @include phone {
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+
+      span {
+        font-size: rem(40);
+        font-weight: 500;
+        line-height: 32px;
+        color: $white;
+        display: block;
+        margin-top: 16px;
+
+        @include phone {
+          font-size: rem(30);
+        }
+      }
+    }
+  }
+}
+
+.social-content {
+  z-index: 5;
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(19, 2, 62, 0.59);
+  // opacity: 0.7;
+  z-index: 1;
+}

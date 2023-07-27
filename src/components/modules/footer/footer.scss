@@ -1,7 +1,39 @@
 footer {
-  background: red;
-  font-size: rem(200);
-  color: white;
-  font-family: "Montserrat";
-  font-weight: 400;
+  background: #309;
+  padding: 74px 0;
+
+  h4 {
+    color: $white;
+  }
+
+  ul {
+    li {
+      margin-top: 24px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+
+  span {
+    color: $white;
+    font-size: rem(16);
+    font-weight: 400;
+  }
+
+  p {
+    color: #FBE94E;
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 1.4px;
+    margin-bottom: 0;
+  }
 }

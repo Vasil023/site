@@ -74,7 +74,7 @@ body {
 .vous {
   padding: 48px 292px !important;
 
-  @include phone {
+  @include tablet-larg {
     padding: 32px 16px !important;
   }
 }
