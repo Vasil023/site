@@ -1,10 +1,1 @@
-<svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="iconamoon:arrow-up-2-duotone" clip-path="url(#clip0_283_951)">
-<path id="Vector" d="M18.2346 28.7062L6.17578 16.9415L18.2346 5.17676" stroke="#13023E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_283_951">
-<rect width="35.2941" height="24" fill="white" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)"/>
-</clipPath>
-</defs>
-</svg>
+<svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="iconamoon:arrow-up-2-duotone" clip-path="url(#clip0_283_951)"><path id="Vector" d="M18.235 28.706L6.175 16.942l12.06-11.765" stroke="#13023E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_283_951"><path fill="#fff" transform="matrix(0 1 1 0 0 0)" d="M0 0h35.294v24H0z"/></clipPath></defs></svg>
