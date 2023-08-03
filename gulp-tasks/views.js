@@ -29,7 +29,7 @@ gulp.task("views", () => {
                 ]
             }
         }))
-        .pipe(replace(/@img\//g, "../img/"))
+        .pipe(replace(/@img\//g, "./img/"))
         .pipe(gulpif(production, replace(".css", ".min.css")))
         .pipe(gulpif(production, replace(".js", ".min.js")))
         .pipe(gulp.dest(paths.views.dist))

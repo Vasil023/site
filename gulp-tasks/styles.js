@@ -30,7 +30,7 @@ gulp.task("styles", () => {
         grid: true,
         flexbox: true,
         overrideBrowserslist: ["> 1%"],
-        browsers: 'last 5 versions, > 1%',
+        browsers: "last 5 versions, > 1%",
         cascade: true,
       })
     )
