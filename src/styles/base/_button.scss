@@ -1,19 +1,23 @@
 .btn-purple {
-  color: $yellow;
+  color: $white;
   background: $purple;
   padding: 12px 16px;
   text-decoration: none;
   border-radius: 8px;
   display: inline-block;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
 }
 
 .btn-yellow {
-  color: $purple;
+  color: $black;
   background: $yellow;
   padding: 12px 16px;
   text-decoration: none;
   border-radius: 8px;
   display: inline-block;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
 }
 
 ._block {
