@@ -1,10 +1,11 @@
 .first-screen {
-  background: url("../../img/cover.png");
+  background: url("@img/cover.png");
   background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: calc(100vh - 93px);
+  min-height: 600px;
   position: relative;
   display: flex;
   align-items: center;

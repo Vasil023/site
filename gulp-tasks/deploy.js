@@ -1,6 +1,6 @@
 import gulp from "gulp";
-import ghPages from "gulp-gh-pages";
+import deploy from "gh-pages";
 
 gulp.task("deploy", function () {
-  return gulp.src("./build/**/*").pipe(ghPages());
+  return gulp.src("../dist/**/**/*").pipe(deploy());
 });

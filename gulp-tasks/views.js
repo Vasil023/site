@@ -7,7 +7,7 @@ import gulpif from "gulp-if";
 import replace from "gulp-replace";
 import browsersync from "browser-sync";
 import yargs from "yargs";
-import versionNumber from "gulp-version-number";
+// import versionNumber from "gulp-version-number";
 
 const argv = yargs.argv,
     production = !!argv.production;
@@ -18,17 +18,17 @@ gulp.task("views", () => {
             prefix: "@@",
             basepath: "@file"
         }))
-        .pipe(versionNumber({
-            "value": "%DT%",
-            "append": {
-                "key": "_v",
-                "cover": 0,
-                "to": [
-                    "css",
-                    "js",
-                ]
-            }
-        }))
+        // .pipe(versionNumber({
+        //     "value": "%DT%",
+        //     "append": {
+        //         "key": "_v",
+                // "cover": 0,
+        //         "to": [
+        //             "css",
+        //             "js",
+        //         ]
+        //     }
+        // }))
         .pipe(replace(/@img\//g, "./img/"))
         .pipe(gulpif(production, replace(".css", ".min.css")))
         .pipe(gulpif(production, replace(".js", ".min.js")))

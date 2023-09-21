@@ -62,7 +62,8 @@ gulp.task("styles", () => {
         })
       )
     )
-    .pipe(replace("../../img", "../img"))
+    .pipe(gulpif(!production, replace(/@img\//g, "../img/")))
+    .pipe(gulpif(production, replace(/@img\//g, "../img/")))
     .pipe(gulpif(production, sourcemaps.write("./maps/")))
     .pipe(gulp.dest(paths.styles.dist))
     .pipe(
