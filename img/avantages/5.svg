@@ -1,0 +1,13 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="streamline:interface-download-desktop-action-actions-computer-desktop-device-display-download-monitor-screen" clip-path="url(#clip0_667_28913)">
+<g id="Group">
+<path id="Vector" d="M49.2857 12.8571H55.7142C56.2826 12.8571 56.8276 13.0829 57.2295 13.4847C57.6313 13.8866 57.8571 14.4316 57.8571 15V45C57.8571 45.5683 57.6313 46.1133 57.2295 46.5152C56.8276 46.9171 56.2826 47.1428 55.7142 47.1428H4.28568C3.71736 47.1428 3.17231 46.9171 2.77045 46.5152C2.36859 46.1133 2.14282 45.5683 2.14282 45V15C2.14282 14.4316 2.36859 13.8866 2.77045 13.4847C3.17231 13.0829 3.71736 12.8571 4.28568 12.8571H10.7143M30 47.1428V57.8571M21.4285 57.8571H38.5714M30 2.14282V27.8571" stroke="#2E0493" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M21.4286 19.2856L30 27.8571L38.5714 19.2856" stroke="#FFE800" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_667_28913">
+<rect width="60" height="60" fill="white"/>
+</clipPath>
+</defs>
+</svg>

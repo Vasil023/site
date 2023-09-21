@@ -11,7 +11,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
   />
   <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="styles/main.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -22,7 +22,7 @@
 
 
   <body>
-    <nav class="navbar navbar-expand-xl bg-body-tertiary">
+    <nav class="navbar navbar-expand-xxl bg-body-tertiary">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="./img/header/logo.png" alt="" />
@@ -98,49 +98,49 @@
     <ul class="gap-5 flex-wrap col-xl-10 justify-content-center offset-xl-1 services-items">
       <li class="services-item">
         <a href="#" class="services-item-link">
-          <img src="./img/services-icon/1.png" alt="icon" />
+          <img src="./img/services-icon/1.svg" alt="icon" />
           <p>Pré-relance commerciale</p>
         </a>
       </li>
       <li class="services-item">
         <a href="#" class="services-item-link">
-          <img src="./img/services-icon/2.png" alt="icon" />
+          <img src="./img/services-icon/2.svg" alt="icon" />
           <p>Recouvrement amiable</p>
         </a>
       </li>
       <li class="services-item">
         <a href="#" class="services-item-link">
-          <img src="./img/services-icon/3.png" alt="icon" />
+          <img src="./img/services-icon/3.svg" alt="icon" />
           <p>Recouvrement judiciaire</p>
         </a>
       </li>
       <li class="services-item">
         <a href="#" class="services-item-link">
-          <img src="./img/services-icon/4.png" alt="icon" />
+          <img src="./img/services-icon/4.svg" alt="icon" />
           <p>Médiation</p>
         </a>
       </li>
       <li class="services-item">
         <a href="#" class="services-item-link">
-          <img src="./img/services-icon/5.png" alt="icon" />
+          <img src="./img/services-icon/5.svg" alt="icon" />
           <p>Gestion des défaillances</p>
         </a>
       </li>
       <li class="services-item">
         <a href="#" class="services-item-link">
-          <img src="./img/services-icon/6.png" alt="icon" />
+          <img src="./img/services-icon/6.svg" alt="icon" />
           <p>Audit et Conseils</p>
         </a>
       </li>
       <li class="services-item">
         <a href="#" class="services-item-link">
-          <img src="./img/services-icon/7.png" alt="icon" />
+          <img src="./img/services-icon/7.svg" alt="icon" />
           <p>Créances à l’international</p>
         </a>
       </li>
       <li class="services-item">
         <a href="#" class="services-item-link">
-          <img src="./img/services-icon/8.png" alt="icon" />
+          <img src="./img/services-icon/8.svg" alt="icon" />
           <p>Formation</p>
         </a>
       </li>
@@ -152,9 +152,9 @@
       <!-- Les AVANTAGES de GAYSSOT Recouvrement -->
       <section class="avanteges">
   <div class="container">
-    <div class="row">
+    <div class="row avanteges-wrapper">
       <div class="col-xl-6 col-lg-5 d-none d-lg-block d-xl-block">
-        <img src="./img/2.png" alt="" />
+        <img class="avanteges-img" src="./img/2.png" alt="" />
       </div>
       <div class="col-xl-6 col-lg-7 col-md-12 pt-4">
         <h2>Les AVANTAGES de GAYSSOT Recouvrement</h2>
@@ -191,10 +191,134 @@
               >
             </div>
           </li>
-          <li>
+          <li id="load-more-btn">
             <a href="#" class="btn-yellow _block">Les autres avantages de Gayssot</a>
           </li>
         </ul>
+      </div>
+    </div>
+
+    <!-- Load more block -->
+    <div class="load-more-block">
+      <div class="row flex-xxl-row  flex-column-reverse">
+        <div class="col-xl-6 col-lg-7 col-md-12">
+          <ul>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/11.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >Nos ressources et moyens IT modulaires permettent une connexion simple et sur-mesure entre
+                  notre ERP et les applicatifs métiers de nos clients afin d’assurer des gros volumes de
+                  factures ( 1 300 000 factures traitées en un an)</span
+                >
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/12.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span>
+                  Notre équipe de juristes et de commissaires de justice vous accompagnent et vous conseillent
+                  pendant toute la phase de recouvrement judiciaire grâce à leur expertise et à notre réseau
+                  d’Huissiers et d’avocats sur toute la France.
+                </span>
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/13.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >Si le recouvrement est impossible ou infructueux, Gayssot délivre un certificat
+                  d’irrécouvrabilité gratuitement, vous permettant ainsi de récupérer la TVA;</span
+                >
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/14.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >Notre Certification ISO 9001 V2015 vous garantit le plus haut niveau de la qualité ;
+                </span>
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/15.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >L’échange sécurisé de documents sur notre plateforme SaaS permet de conserver la
+                  confidentialité des documents et protéger les données contre toute menace de piratage
+                  informatique ;</span
+                >
+              </div>
+            </li>
+            <li>
+              <a href="#" class="btn-purple _block">moins d'avantages de Gaisot</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-xl-6 col-lg-7 col-md-12">
+          <ul>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/5.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >Notre logiciel de recouvrement permet de suivre en temps réel l’avancement de vos dossiers
+                  et l’historique des actions menées ainsi que le montant des sommes encaissées
+                </span>
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/6.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >Des reporting réguliers et sur-mesure sont possibles en choisissant les KPI’s et la
+                  fréquence souhaités.
+                </span>
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/7.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >Gayssot est une entreprise Lyonnaise dont tous les effectifs sont basés en France.</span
+                >
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/8.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span>Gayssot recouvrement couvre aussi bien la France que l’international ; </span>
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/9.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >Nous travaillons aussi bien avec des TPE que des grands groupes, pour des petites créances
+                  ou pour celles de plusieurs millions d’euros ;
+                </span>
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/10.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >90% des factures sont recouvrées à l’amiable tout en préservant la relation client;</span
+                >
+              </div>
+            </li>
+            <li class="avanteges-item">
+              <div class="avanteges-icon"><img src="./img/avantages/11.svg" alt="icon" /></div>
+              <div class="avanteges-content">
+                <span
+                  >Nos ressources et moyens IT modulaires permettent une connexion simple et sur-mesure entre
+                  notre ERP et les applicatifs métiers de nos clients afin d’assurer des gros volumes de
+                  factures ( 1 300 000 factures traitées en un an)</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -637,7 +761,7 @@
   </div>
 </footer>
 
-    <script src="../js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <script src="../js/vendor.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
