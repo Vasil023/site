@@ -5,6 +5,7 @@
 
   img {
     width: 100%;
+    border-radius: 16px;
   }
 
   @include phone {
@@ -12,8 +13,22 @@
   }
 }
 
+.avanteges-wrapper {
+  @include tablet-up {
+    height: 100% !important;
+  }
+}
+
 .avanteges-items {
   margin-top: 14px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+   @include tablet-up {
+    height: 100% !important;
+  }
+
 }
 
 .avanteges-item {
@@ -41,6 +56,11 @@
     letter-spacing: 1.6px;
   }
 
+  img {
+    width: 60px;
+    height: 60px;
+  }
+
   .btn-yellow {
     display: block;
     text-align: center;
@@ -50,4 +70,9 @@
   &:hover {
     box-shadow: 0px 4px 15px -3px rgba(0, 0, 0, 0.25);
   }
+}
+
+.load-more-block {
+  margin-top: 16px;
+  display: none;
 }
